@@ -1,0 +1,5 @@
+.rounded-bottom-left {
+  border-radius: 0;
+  border-bottom-left-radius: .25rem!important;
+}
+

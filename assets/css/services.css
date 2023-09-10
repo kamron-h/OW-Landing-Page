@@ -1,0 +1,9 @@
+.badge.b1 {
+  background-color: orangered !important;
+  border-top-right-radius: 3.5px;
+}
+
+.btn.service {
+  background-color: black;
+}
+
