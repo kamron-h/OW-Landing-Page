@@ -1,0 +1,26 @@
+.map {
+  height: 275px;
+}
+
+@media (min-width: 576px) {
+  .map {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .map {
+    height: auto;
+  }
+}
+
+/* Submit Button */
+.btn.contact {
+  color: white;
+  background-color: black !important;
+  border-color: transparent;
+}
+
+.btn.contact:hover {
+  background-color: #198754 !important;
+}

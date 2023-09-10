@@ -5,13 +5,9 @@
 
 .btn.service {
   background-color: black;
+  border-color: transparent;
 }
 
 .btn.service:hover {
   background-color: #198754 !important;
 }
-
-.btn.service {
-  border-color: transparent;
-}
-
