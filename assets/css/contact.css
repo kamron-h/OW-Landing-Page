@@ -22,5 +22,6 @@
 }
 
 .btn.contact:hover {
+  color: white;
   background-color: #198754 !important;
 }

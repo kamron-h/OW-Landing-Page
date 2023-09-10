@@ -72,3 +72,8 @@ h2, .h2 {
   font-style: italic;
 }
 
+.btn.submit {
+  text-align: center;
+  background-color: #198754;
+  color: white;
+}
