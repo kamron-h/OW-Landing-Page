@@ -2,6 +2,18 @@
 
 /* NavBar Large */
 
+@media (min-width: 500px) {
+  .nav-btn {
+    font-size: large;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-btn {
+    font-size: larger !important;
+  }
+}
+
 .nav-btn {
   margin-left: 0.3em;
   margin-right: 0.3em;
@@ -10,6 +22,7 @@
   font-weight: bold;
   border-color: transparent;
   border-radius: 8px !important;
+  font-size: smaller;
 }
 
 .btn:hover {
