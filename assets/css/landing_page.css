@@ -1,7 +1,5 @@
 /* NavBar Small */
 
-/* NavBar Large */
-
 @media (min-width: 500px) {
   .nav-btn {
     font-size: large;
@@ -14,21 +12,37 @@
   }
 }
 
+/* NavBar Large */
+
 .nav-btn {
-  margin-left: 0.3em;
-  margin-right: 0.3em;
+  /*margin-left: 0.3em;*/
+  /*margin-right: 0.3em;*/
   background-color: transparent;
   color: black;
   font-weight: bold;
   border-color: transparent;
   border-radius: 8px !important;
   font-size: smaller;
+  text-align: center;
 }
 
 .btn:hover {
   color: var(--bs-black);
   background-color: white !important;
   border-color: var(--bs-black);
+}
+
+/* Brand Name */
+
+.brand-col {
+  display: none;
+  /*background-color: var(--bs-primary);*/
+}
+
+.nav-btn.brand {
+  background: transparent;
+  margin: 0;
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -85,8 +99,14 @@ h2, .h2 {
   font-style: italic;
 }
 
-.btn.submit {
-  text-align: center;
-  background-color: #198754;
-  color: white;
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
 }
+
+.btn.home-contact {
+  background-color: #198754;
+  border-color: #198754;
+  font-weight: bold;
+}
+
