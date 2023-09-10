@@ -7,3 +7,11 @@
   background-color: black;
 }
 
+.btn.service:hover {
+  background-color: #198754 !important;
+}
+
+.btn.service {
+  border-color: transparent;
+}
+

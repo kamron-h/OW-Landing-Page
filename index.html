@@ -144,7 +144,7 @@
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
                     <form>
                         <div class="row">
-                            <div class="col-12 col-md-3"><a class="btn btn-primary btn-lg" role="button" href="contact.html">Contact Us</a></div>
+                            <div class="col-12 col-md-3"><a class="btn btn-lg" role="button" href="contact.html" style="background-color: #198754;color: white;">Contact Us</a></div>
                         </div>
                     </form>
                 </div>
@@ -182,10 +182,10 @@ document.querySelector("form").addEventListener("submit", function(event) {
     // Checking if required fields are filled out
     const emailField = document.getElementById("email");
 
-    if emailField.value.trim() === "" {
+    if (emailField.value.trim() === "" ) {
         alert("There was an error, please properly fill out the email field.");
         return;
-    }
+    };
 
     // Code to clear the form fields
     emailField.value = "";
