@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <title>Home - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/landing_page.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Clean-badges.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Clean-icons.css">
-    <link rel="stylesheet" href="assets/css/services.css">
 </head>
 
 <body>
@@ -27,7 +24,7 @@
     <nav class="navbar navbar-expand sticky-top bg-light navigation-clean navbar-light n-2" style="background: rgba(248,249,250,0.82) !important;box-shadow: 0px 1px 6px rgb(248,249,250,0.82);margin-left: auto;margin-right: auto;width: 100%;">
         <div class="container">
             <div class="row" style="width: 100%;">
-                <div class="col-12">
+                <div class="col-12" style="padding-right: 0px;padding-left: 24px;">
                     <div class="collapse navbar-collapse d-md-flex d-xxl-flex" id="navcol-2">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-md-end">
                             <div class="collapse navbar-collapse d-md-flex d-xxl-flex" id="navcol-1">
@@ -98,7 +95,7 @@
                 </div>
             </div>
             <div class="row g-0">
-                <div class="col-lg-6 text-white showcase-img" style="background-image: url(&quot;https://imagedelivery.net/5IPp1ww3GQHMKaYL6DWf-g/cd38bae6-224b-4d96-d9b6-7f800b90de00/UHD1920X1080&quot;);"><span></span></div>
+                <div class="col-lg-6 text-white showcase-img" style="background-image: url(&quot;https://imagedelivery.net/5IPp1ww3GQHMKaYL6DWf-g/c598c299-40ca-484b-44e4-2e38f68f0800/UHD1920X1080&quot;);"><span></span></div>
                 <div class="col-lg-6 my-auto order-lg-1 showcase-text">
                     <h2>Best Practices</h2>
                     <p class="lead mb-0">Our development journey is paved with industry best practices at every step. From meticulous requirement elicitation to rigorous pre-delivery testing, we ensure your software stands tall in quality and reliability. Partner with a team where integrity meets innovation.</p>
@@ -144,7 +141,7 @@
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
                     <form>
                         <div class="row">
-                            <div class="col-12 col-md-12 d-flex justify-content-center"><a class="btn btn-lg" role="button" href="contact.html" style="background-color: #198754;color: white;">Contact Us</a></div>
+                            <div class="col-12 col-md-12 d-flex justify-content-center"><a class="btn btn-primary btn-lg" role="button" href="contact.html" style="background-color: #198754;border-color: #198754;">Contact Us</a></div>
                         </div>
                     </form>
                 </div>
@@ -174,42 +171,11 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-end my-auto h-100"></div>
             </div>
-        </div><script>
-
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevents the form from submitting the traditional way
-
-    // Checking if required fields are filled out
-    const emailField = document.getElementById("email");
-
-    if (emailField.value.trim() === "" ) {
-        alert("There was an error, please properly fill out the email field.");
-        return;
-    };
-
-    // Code to clear the form fields
-    emailField.value = "";
-    document.querySelectorAll(".form-check-input").forEach(input => input.checked = false);
-    
-    // Activate the modal named "modal-1"
-    const modal = new bootstrap.Modal(document.getElementById('modal-0'));
-    modal.show();
-
-    // If you still want to redirect after showing the modal, use the following code with an appropriate delay:
-    setTimeout(() => window.location.href = "index.html", 1200); // Waits for 5 seconds
-    
-    // Displaying the thank you message (using a modal or alert)
-    // alert("Gratitude from the Digital Heart of OurCulture. Thank you for reaching out and entrusting your vision with us. We deeply value the connection we're building. Rest assured, we will meticulously review your message and our team will be in touch soon. Let's shape the digital future together!");
-
-    // Redirecting to the index.html file
-    // window.location.href = "index.html";
-});
-
-</script>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

@@ -3,17 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <title>ContactUs</title>
-    <meta name="description" content="Contact Us Page">
+    <meta name="description" content="Contact Us">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/landing_page.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Clean-badges.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Clean-icons.css">
-    <link rel="stylesheet" href="assets/css/services.css">
 </head>
 
 <body>
@@ -86,7 +83,7 @@
                                 </div>
                             </div>
                             <div class="mb-3"><label class="form-label" for="message" style="margin-top: 1rem;font-weight: bold;">Message :</label><textarea class="form-control" id="message" name="message" rows="6" autocomplete="on" spellcheck="true"></textarea></div>
-                            <div class="mb-3"><button class="btn btn-primary" type="submit" style="font-weight: bold;">Send </button></div>
+                            <div class="mb-3"><button class="btn contact" type="submit" style="font-weight: bold;">Send </button></div>
                         </form>
                     </div>
                 </div>
@@ -102,43 +99,6 @@
                 <div class="col-lg-6 text-center text-lg-end my-auto h-100"></div>
             </div>
         </div>
-        <div><script>
-
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevents the form from submitting the traditional way
-
-    // Checking if required fields are filled out
-    const nameField = document.getElementById("name");
-    const emailField = document.getElementById("email");
-    const companyField = document.getElementById("company");
-    const jobTitleField = document.getElementById("job");
-    const messageField = document.getElementById("message");
-
-    if (nameField.value.trim() === "" || emailField.value.trim() === "" || companyField.value.trim() === "" || jobTitleField.value.trim() === "" || messageField.value.trim() === "") {
-        alert("Please fill out all required fields.");
-        return;
-    }
-
-    // Code to clear the form fields
-    nameField.value = "";
-    emailField.value = "";
-    companyField.value = "";
-    jobTitleField.value = "";
-    messageField.value = "";
-    document.querySelectorAll(".form-check-input").forEach(input => input.checked = false);
-    
-    // Activate the modal named "modal-1"
-    const modal = new bootstrap.Modal(document.getElementById('modal-1'));
-    modal.show();
-
-    // Displaying the thank you message (using a modal or alert)
-    // alert("Gratitude from the Digital Heart of OurCulture. Thank you for reaching out and entrusting your vision with us. We deeply value the connection we're building. Rest assured, we will meticulously review your message and our team will be in touch soon. Let's shape the digital future together!");
-
-    // Redirecting to the index.html file
-    // window.location.href = "index.html";
-});
-
-</script></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/contact.js"></script>
