@@ -18,7 +18,7 @@
 .btn.contact {
   color: white;
   background-color: black !important;
-  border-color: transparent;
+  border-color: transparent !important;
 }
 
 .btn.contact:hover {
